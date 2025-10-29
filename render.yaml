@@ -1,7 +1,8 @@
 services:
   - type: web
     name: jejumatch-api
-    env: node
+    runtime: node
+    rootDir: server
     buildCommand: npm install
     startCommand: npm start
     envVars:
