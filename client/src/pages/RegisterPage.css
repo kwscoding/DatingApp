@@ -1,0 +1,88 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+.register-container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.register-container input,
+.register-container select {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.register-container input:focus,
+.register-container select:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.register-container button {
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 8px;
+  transition: opacity 0.3s;
+}
+
+.register-container button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.register-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 24px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #667eea;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.login-link a:hover {
+  color: #764ba2;
+}
